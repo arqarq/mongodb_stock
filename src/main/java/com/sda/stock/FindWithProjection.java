@@ -15,7 +15,7 @@ public class FindWithProjection {
 
     public static void main(String[] args) {
 
-        try(MongoClient client = new MongoClient("localhost", 27017)) {
+        try(MongoClient client = Utils.connect()) {
             MongoDatabase db = client.getDatabase("products");
             MongoCollection<Document> products = db.getCollection("products");
             products.find(Filters.eq("type", "movie"))
@@ -29,6 +29,6 @@ public class FindWithProjection {
         System.out.println("Title: " + doc.getString("title"));
         System.out.println("Starring: ");
         List<String> actors = (List<String>) ((Document) doc.get("details")).get("starring");
-        actors.stream().forEach(actor -> System.out.println("- " + actor));
+        actors.forEach(actor -> System.out.println("- " + actor));
     }
 }

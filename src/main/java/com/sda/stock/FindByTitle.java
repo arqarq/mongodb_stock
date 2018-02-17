@@ -12,7 +12,7 @@ import static com.mongodb.client.model.Filters.eq;
 public class FindByTitle {
 
     public static void main(String[] args) {
-        try(MongoClient client = new MongoClient("localhost", 27017)) {
+        try(MongoClient client = Utils.connect()) {
             MongoDatabase db = client.getDatabase("products");
             MongoCollection<Document> products = db.getCollection("products");
             products.find(eq("title", "Terminator"))

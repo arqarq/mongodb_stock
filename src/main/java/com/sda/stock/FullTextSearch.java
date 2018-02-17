@@ -13,11 +13,11 @@ public class FullTextSearch {
 
     public static void main(String[] args) {
 
-        try(MongoClient client = new MongoClient("localhost", 27017)) {
+        try(MongoClient client = Utils.connect()) {
             MongoDatabase db = client.getDatabase("products");
             MongoCollection<Document> products = db.getCollection("products");
             products.find(Filters.text("James"))
-                    .forEach((Consumer<? super Document>) Utils::displayDoc);
+                    .forEach((Consumer<Document>) Utils::displayDoc);
         }
     }
 }

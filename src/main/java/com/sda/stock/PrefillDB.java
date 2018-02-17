@@ -12,13 +12,8 @@ import java.io.IOException;
 
 public class PrefillDB {
 
-    private static String[] jamesBluntAlbums = {
-            "{title: 'Back to bedlam', type: 'album', releaseYear: 2004, stockCount: 2, }",
-            "{title: 'Some kind of trouble', type: 'album', releaseYear: 2010, stockCount: 3}"
-    };
-
     public static void main(String[] args) throws IOException {
-        try(MongoClient client = new MongoClient("localhost", 27017)) {
+        try(MongoClient client = Utils.connect()) {
             MongoDatabase db = client.getDatabase("products");
             MongoCollection<Document> products = db.getCollection("products");
             products.createIndex(Indexes.compoundIndex(
@@ -34,5 +29,4 @@ public class PrefillDB {
 
         }
     }
-
 }
