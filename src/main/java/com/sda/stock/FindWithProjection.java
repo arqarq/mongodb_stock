@@ -20,7 +20,7 @@ public class FindWithProjection {
             MongoCollection<Document> products = db.getCollection("products");
             products.find(Filters.eq("type", "movie"))
                     .projection(Projections.include("title", "details.starring"))
-                    .forEach((Consumer<? super Document>) FindWithProjection::displayMovie);
+                    .forEach((Consumer<Document>) FindWithProjection::displayMovie);
         }
     }
 

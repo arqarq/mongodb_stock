@@ -17,7 +17,7 @@ public class FindByRegex {
             MongoDatabase db = client.getDatabase("products");
             MongoCollection<Document> products = db.getCollection("products");
             products.find(Filters.regex("title", "[mk]ind"))
-                    .forEach((Consumer<? super Document>) Utils::displayDoc);
+                    .forEach((Consumer<Document>) Utils::displayDoc);
         }
     }
 }

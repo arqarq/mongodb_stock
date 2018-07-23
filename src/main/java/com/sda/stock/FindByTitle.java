@@ -16,7 +16,7 @@ public class FindByTitle {
             MongoDatabase db = client.getDatabase("products");
             MongoCollection<Document> products = db.getCollection("products");
             products.find(eq("title", "Terminator"))
-                    .forEach((Consumer<? super Document>) Utils::displayDoc);
+                    .forEach((Consumer<Document>) Utils::displayDoc);
         }
     }
 }
