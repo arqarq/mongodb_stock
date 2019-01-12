@@ -1,0 +1,117 @@
+[
+    {
+        "authors": [
+            "James Blunt"
+        ],
+        "details": {
+            "genre": "pop",
+            "media": "CD"
+        },
+        "stockCount": 10,
+        "title": "Back to bedlam",
+        "type": "album"
+    },
+    {
+        "authors": [
+            "James Blunt"
+        ],
+        "details": {
+            "genre": "pop",
+            "media": "CD"
+        },
+        "stockCount": 8,
+        "title": "Some kind of trouble",
+        "type": "album"
+    },
+    {
+        "authors": [
+            "Richard Morgan"
+        ],
+        "details": {
+            "edition": 1,
+            "genre": "sci-fi",
+            "publisher": "Victor Gollancz Ltd"
+        },
+        "stockCount": 50,
+        "title": "Altered Carbon",
+        "type": "book"
+    },
+    {
+        "authors": [
+            "Michael Nielsen",
+            "Isaac Chuang"
+        ],
+        "details": {
+            "edition": 2,
+            "publisher": "Oxford university press"
+        },
+        "stockCount": 2,
+        "title": "Quantum information and quantum computation",
+        "type": "book"
+    },
+    {
+        "authors": [
+            "Ron Howard"
+        ],
+        "details": {
+            "genre": "drama",
+            "starring": [
+                "Russell Crowe",
+                "Jennifer Connelly"
+            ]
+        },
+        "stockCount": 11,
+        "title": "Beautiful mind",
+        "type": "movie"
+    },
+    {
+        "authors": [
+            "James Cameron"
+        ],
+        "details": {
+            "genre": "sci-fi",
+            "media": "DVD",
+            "starring": [
+                "Arnold Schwarzenegger"
+            ]
+        },
+        "stockCount": 1,
+        "title": "Terminator",
+        "type": "movie"
+    },
+    {
+        "authors": [
+            "Patrick Hughes"
+        ],
+        "details": {
+            "genre": "action",
+            "media": "DVD",
+            "starring": [
+                "Arnold Schwarzenegger",
+                "Jackie Chan",
+                "Bruce Willis",
+                "Sylvester Stallone",
+                "Jason Statham"
+            ]
+        },
+        "stockCount": 3,
+        "title": "The expendables 3",
+        "type": "movie"
+    },
+    {
+        "authors": [
+            "Trevor White"
+        ],
+        "details": {
+            "genre": "drama",
+            "media": "Blue-Ray",
+            "starring": [
+                "Mary-Louise Parker",
+                "Ving Rhames"
+            ]
+        },
+        "stockCount": 12,
+        "title": "James boy",
+        "type": "movie"
+    }
+]
