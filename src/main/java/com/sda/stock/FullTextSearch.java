@@ -10,7 +10,6 @@ import org.bson.Document;
 import java.util.function.Consumer;
 
 public class FullTextSearch {
-
     public static void main(String[] args) {
 
         try(MongoClient client = Utils.connect()) {

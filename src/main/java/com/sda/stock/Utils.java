@@ -6,7 +6,6 @@ import org.bson.Document;
 import java.util.List;
 
 public class Utils {
-
     public static void displayDoc(Document doc) {
         System.out.println("---");
         System.out.println("Title: " + doc.getString("title"));

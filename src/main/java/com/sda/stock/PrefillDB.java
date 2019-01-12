@@ -11,7 +11,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class PrefillDB {
-
     public static void main(String[] args) throws IOException {
         try(MongoClient client = Utils.connect()) {
             MongoDatabase db = client.getDatabase("products");
